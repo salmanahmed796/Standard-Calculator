@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    
+
+    <div class="main bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 calUi">
+                    <div>
+                        <h4 class="bg-light py-2 text-center">STANDARD CALCULATOR</h4>
+                    </div>
+                    <div class="pb-2 input-group-lg">
+                        <input id="result" class="result form-control" placeholder="0" type="text">
+                    </div>
+                    <div class="numeric pt-3">
+                        <button class="clearBtn bg-light" onclick="clearNumber()">C</button>
+                        <button class="percBtn bg-light" onclick="getNumber('%')">%</button>
+                        <button class="devBtn bg-light" onclick="getNumber('/')">/</button>
+                    </div>
+                    <div class="numeric pt-3">
+                        <button class="Btn bg-secondary" onclick="getNumber('7')">7</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('8')">8</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('9')">9</button>
+                        <button class="Btn bg-light" onclick="getNumber('*')">x</button>
+                    </div>
+                    <div class="numeric pt-3">
+                        <button class="Btn bg-secondary" onclick="getNumber('4')">4</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('5')">5</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('6')">6</button>
+                        <button class="Btn bg-light" onclick="getNumber('-')">-</button>
+                    </div>
+                    <div class="numeric pt-3">
+                        <button class="Btn bg-secondary" onclick="getNumber('1')">1</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('2')">2</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('3')">3</button>
+                        <button class="Btn bg-light" onclick="getNumber('+')">+</button>
+                    </div>
+                    <div class="numeric pt-3">
+                        <button class="Btn bg-secondary" onclick="getNumber('0')">0</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('00')">00</button>
+                        <button class="Btn bg-secondary" onclick="getNumber('.')">.</button>
+                        <button class="Btn bg-light" onclick="getResult()">=</button>
+                    </div>
+                    <div>
+                        <h4 class="text-center pt-3   ">Made By: Salman Ahmed</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
